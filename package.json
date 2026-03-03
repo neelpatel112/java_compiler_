@@ -1,0 +1,17 @@
+{
+  "name": "java-compiler-web",
+  "version": "1.0.0",
+  "description": "Real Online Java Compiler with JDoodle API",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0",
+    "cors": "^2.8.5"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
