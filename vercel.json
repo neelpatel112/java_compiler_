@@ -3,7 +3,8 @@
   "functions": {
     "api/compile.js": {
       "maxDuration": 10,
-      "memory": 1024
+      "memory": 1024,
+      "runtime": "nodejs24.x"
     }
   },
   "routes": [
@@ -34,9 +35,5 @@
         }
       ]
     }
-  ],
-  "env": {
-    "JDOODLE_CLIENT_ID": "471db6e3a051d290e66025b1414a0c82",
-    "JDOODLE_CLIENT_SECRET": "b5b224ef1aa53a75e968acef063a67ffa3512141f09a35d4fdec597794389dfe"
-  }
+  ]
 }
