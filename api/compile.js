@@ -1,5 +1,5 @@
 // Serverless function for Java compilation using JDoodle API
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
 // JDoodle API configuration
 const JDoodle_CONFIG = {
@@ -8,7 +8,7 @@ const JDoodle_CONFIG = {
   apiUrl: 'https://api.jdoodle.com/v1/execute'
 };
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -90,4 +90,4 @@ module.exports = async (req, res) => {
       output: `Error: ${error.message}\nPlease check your internet connection and try again.`
     });
   }
-};
+}
